@@ -29,18 +29,10 @@ Port=5432
 Database=FleetManagerDb
 ```
 
-## 🛠️ Apply EF Core Migrations
-
-```bash
-dotnet ef database update \
-  --project FleetManager.DAL \
-  --startup-project FleetManager.Api
-```
-
 ## ▶️ Run the API
 
 ```bash
-dotnet run --project FleetManager.Api
+dotnet run --project FleetManager.Web
 ```
 
 API will start at:
