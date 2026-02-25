@@ -1,0 +1,43 @@
+@FleetManager_HostAddress = http://localhost:5012
+
+### Get all vehicles in the fleet
+GET {{FleetManager_HostAddress}}/vehicles/
+Accept: application/json
+
+### Get vehicles leased to a specific person with status filter
+@leasedTo = John Doe
+@status = Available
+
+GET {{FleetManager_HostAddress}}/vehicles?leasedTo={{leasedTo}}&status={{status}}
+Accept: application/json
+
+### Add a new vehicle to the fleet
+POST {{FleetManager_HostAddress}}/vehicles/
+Content-Type: application/json
+{
+  "licensePlate": "2422",
+  "color": "red",
+  "year": 2020,
+  "status": Available,
+  "leasedTo": null,
+  "remarks": "Some remarks"
+}
+
+### Update the status of a vehicle
+PATCH {{FleetManager_HostAddress}}/vehicles/212
+Content-Type: application/json
+{
+  "status": 1
+}
+
+### Lease a vehicle to a person
+POST {{FleetManager_HostAddress}}/vehicles/212/lease
+Content-Type: application/json
+{
+  "leasedTo": "Jane Doe"
+}
+
+###
+
+### Populate the database with 100 vehicles for testing purposes
+POST {{FleetManager_HostAddress}}/vehicles/populate

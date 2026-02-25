@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.yaml" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="FleetManager.Common/FleetManager.Common.csproj" Id="dfabc7d6-e35e-4fed-b845-f4627f786045" />
+  <Project Path="FleetManager.DAL/FleetManager.DAL.csproj" Id="61b77e23-a705-40bb-ba6b-e4a69aa12ee2" />
+  <Project Path="FleetManager.Services/FleetManager.Services.csproj" />
+  <Project Path="FleetManager.Tests/FleetManager.Tests.csproj" Id="445154dd-2c78-499d-af0c-311b083c492a" />
+  <Project Path="FleetManager.Web/FleetManager.Web.csproj" />
+</Solution>
