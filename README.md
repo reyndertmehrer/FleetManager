@@ -7,6 +7,7 @@ ASP.NET Core Web API for managing vehicles, using Entity Framework Core with Pos
 * **FleetManager.Api** — ASP.NET Core Web API
 * **FleetManager.Services** — Service layer (business logic, interfaces)
 * **FleetManager.DAL** — Data Access Layer (EF Core, entities, DbContext)
+* **FleetManager.Tests** — Test project containing unit tests and integration tests
 * **PostgreSQL** — Database (Docker)
 
 ## ⚙️ Requirements
